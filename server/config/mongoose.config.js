@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 mongoose.connect(
 'mongodb://localhost/product_manager'
 , {
@@ -6,5 +7,5 @@ mongoose.connect(
   useCreateIndex: true,
   useUnifiedTopology: true
 })
-    .then(()=>console.log("💻 Mondodb Connected"))
+    .then(()=>console.log("💻 Mongodb Connected"))
     .catch(err=>console.log("Something went wrong when connecting to the database",err));
